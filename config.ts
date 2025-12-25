@@ -16,7 +16,7 @@ const options: Options = {
   rounded: { side: { divisor: 3, concavity: 1.5 } },
   connectors: [{ preset: "trrs" }, { preset: "usb", size: "average" }],
   connectorIndex: -1,
-  microcontroller: "kb2040-adafruit",
+  microcontroller: "waveshare-rp2040-zero",
   microcontrollerAngle: 0,
   fastenMicrocontroller: true,
   flipConnectors: false,
