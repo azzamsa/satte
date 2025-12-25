@@ -26,10 +26,10 @@ const options: Options = {
 // NOTE: Screws / the connector with
 // negative indices are placed automatically.
 // In the basic/advanced tab, these values were:
-// [left] screwIndices: [3.5, 11.5, 29.5, 15.5, 7.5, 33.5, 26.5]
-// [left] connectorIndex: 24.6
-// [right] screwIndices: [3.5, 11.5, 29.5, 15.5, 7.5, 33.5, 26.5]
-// [right] connectorIndex: 24.6
+// [left] screwIndices: [3.5, 29.5, 11.5, 16.5, 25.5, 7.5, 33.5]
+// [left] connectorIndex: 25.7
+// [right] screwIndices: [3.5, 29.5, 11.5, 16.5, 25.5, 7.5, 33.5]
+// [right] connectorIndex: 25.7
 
 /**
  * The planes used to position the clusters.
