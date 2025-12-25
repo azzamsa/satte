@@ -26,10 +26,10 @@ const options: Options = {
 // NOTE: Screws / the connector with
 // negative indices are placed automatically.
 // In the basic/advanced tab, these values were:
-// [left] screwIndices: [6.5, 15.5, 32.5, 19.5, 10.5, 2.5, 26.5]
-// [left] connectorIndex: 25.7
-// [right] screwIndices: [6.5, 15.5, 32.5, 19.5, 10.5, 2.5, 26.5]
-// [right] connectorIndex: 25.7
+// [left] screwIndices: [3.5, 11.5, 29.5, 15.5, 7.5, 33.5, 26.5]
+// [left] connectorIndex: 24.6
+// [right] screwIndices: [3.5, 11.5, 29.5, 15.5, 7.5, 33.5, 26.5]
+// [right] connectorIndex: 24.6
 
 /**
  * The planes used to position the clusters.
@@ -1029,10 +1029,12 @@ const thumbsRight: Key[] = [
 export default {
   left: {
     ...options,
+    connectorIndex: 23.3,
     keys: [...fingersLeft, ...thumbsLeft],
   },
   right: {
     ...options,
+    connectorIndex: 23.3,
     keys: [...fingersRight, ...thumbsRight],
   },
 };

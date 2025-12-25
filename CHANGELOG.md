@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.4
+
+- Set `Connector Index` to `23.3`. Otherwise it is located in unusable location.
+
 ## v1.3
 
 - The keyboard should use `Waveshare RP2040-Zero` instead of `Adafruit KB2040`.
