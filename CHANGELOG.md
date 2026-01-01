@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.4
+
+- additional `shaper key` looks ugly.
+
 ## v2.3
 
 - use `shaper key` for better MCU location.
