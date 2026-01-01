@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.2
+
+- fix MCU location
+
 ## v2.1
 
 - 1.75u is too big. 1.5u is comfortable enough

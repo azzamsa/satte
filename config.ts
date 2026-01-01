@@ -26,9 +26,9 @@ const options: Options = {
 // NOTE: Screws / the connector with
 // negative indices are placed automatically.
 // In the basic/advanced tab, these values were:
-// [left] screwIndices: [3.5, 29.5, 11.5, 15.5, 7.5, 33.5, 26.5]
+// [left] screwIndices: [2.5, 10.5, 28.5, 15.5, 24.5, 6.5, 32.5]
 // [left] connectorIndex: 24.7
-// [right] screwIndices: [3.5, 29.5, 11.5, 15.5, 7.5, 33.5, 26.5]
+// [right] screwIndices: [2.5, 10.5, 28.5, 15.5, 24.5, 6.5, 32.5]
 // [right] connectorIndex: 24.7
 
 /**
@@ -1037,12 +1037,12 @@ const thumbsRight: Key[] = [
 export default {
   left: {
     ...options,
-    connectorIndex: 23.3,
+    connectorIndex: 22.3,
     keys: [...fingersLeft, ...thumbsLeft],
   },
   right: {
     ...options,
-    connectorIndex: 23.3,
+    connectorIndex: 22.3,
     keys: [...fingersRight, ...thumbsRight],
   },
 };
