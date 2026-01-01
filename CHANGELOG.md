@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.1
+
+- 1.75u is too big. 1.5u is comfortable enough
+  I tried on my previous case
+
 ## v2.0
 
 - Change the pinky cluster from 1u to 1.75u.
