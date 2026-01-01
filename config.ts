@@ -469,7 +469,7 @@ const fingersLeft: Key[] = [
       .rotate(-90, [0, 0, 0], [0, 0, 1])
       .translate(5, -22, 2.3)
       .placeOnMatrix({
-        column: -2.755,
+        column: -2.76,
         row: 0,
         spacingOfColumns: 21.5,
         spacingOfRows: 20.5,
@@ -942,7 +942,7 @@ const fingersRight: Key[] = [
       .rotate(90, [0, 0, 0], [0, 0, 1])
       .translate(-5, -22, 2.3)
       .placeOnMatrix({
-        column: 2.755,
+        column: 2.76,
         row: 0,
         spacingOfColumns: 21.5,
         spacingOfRows: 20.5,

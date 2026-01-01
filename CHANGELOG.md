@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.3
+
+- use `shaper key` for better MCU location.
+
 ## v2.2
 
 - fix MCU location
