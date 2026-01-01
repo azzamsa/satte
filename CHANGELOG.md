@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.0
+
+- Change the pinky cluster from 1u to 1.75u.
+  This will avoids having repetitive research to find comfortable Y axis.
+
 ## v1.4
 
 - Set `Connector Index` to `23.3`. Otherwise it is located in unusable location.

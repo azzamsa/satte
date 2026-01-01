@@ -26,10 +26,10 @@ const options: Options = {
 // NOTE: Screws / the connector with
 // negative indices are placed automatically.
 // In the basic/advanced tab, these values were:
-// [left] screwIndices: [3.5, 29.5, 11.5, 16.5, 25.5, 7.5, 33.5]
-// [left] connectorIndex: 25.7
-// [right] screwIndices: [3.5, 29.5, 11.5, 16.5, 25.5, 7.5, 33.5]
-// [right] connectorIndex: 25.7
+// [left] screwIndices: [3.5, 29.5, 11.5, 15.5, 7.5, 34.5, 26.5]
+// [left] connectorIndex: 24.7
+// [right] screwIndices: [3.5, 29.5, 11.5, 15.5, 7.5, 34.5, 26.5]
+// [right] connectorIndex: 24.7
 
 /**
  * The planes used to position the clusters.
@@ -461,12 +461,15 @@ const fingersLeft: Key[] = [
   },
   {
     type: "mx-hotswap",
-    aspect: 1,
+    aspect: 1.75,
     cluster: "fingers",
     position: new Trsf()
-      .translate(0, -17.2, 2.3)
+      .rotate(0, [0, 0, 0], [1, 0, 0])
+      .rotate(0, [0, 0, 0], [0, 1, 0])
+      .rotate(-90, [0, 0, 0], [0, 0, 1])
+      .translate(8, -27, 2.3)
       .placeOnMatrix({
-        column: -2.5,
+        column: -2.875,
         row: 0,
         spacingOfColumns: 21.5,
         spacingOfRows: 20.5,
@@ -477,6 +480,7 @@ const fingersLeft: Key[] = [
       .transformBy(leftFingersPlane),
     variant: { hotswap: "Kailh" },
     keycap: {
+      letter: "-",
       home: "pinky",
       row: 3,
       profile: "xda",
@@ -930,12 +934,15 @@ const fingersRight: Key[] = [
   },
   {
     type: "mx-hotswap",
-    aspect: 1,
+    aspect: 1.75,
     cluster: "fingers",
     position: new Trsf()
-      .translate(0, -17.2, 2.3)
+      .rotate(0, [0, 0, 0], [1, 0, 0])
+      .rotate(0, [0, 0, 0], [0, 1, 0])
+      .rotate(90, [0, 0, 0], [0, 0, 1])
+      .translate(-8, -27, 2.3)
       .placeOnMatrix({
-        column: 2.5,
+        column: 2.875,
         row: 0,
         spacingOfColumns: 21.5,
         spacingOfRows: 20.5,
@@ -946,6 +953,7 @@ const fingersRight: Key[] = [
       .transformBy(rightFingersPlane),
     variant: { hotswap: "Kailh" },
     keycap: {
+      letter: "-",
       home: "pinky",
       row: 3,
       profile: "xda",
