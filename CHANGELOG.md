@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.6
+
+- Add lip to the base.
+
 ## v2.5
 
 - I like sharper corner more than rounded one.

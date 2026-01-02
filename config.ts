@@ -24,7 +24,7 @@ const options: Options = {
   fastenMicrocontroller: true,
   flipConnectors: false,
   wristRestOrigin: new Trsf().translate(10, -110, 0),
-  shell: { type: "basic", lip: false }
+  shell: { type: "basic", lip: true }
 }
 // NOTE: Screws / the connector with
 // negative indices are placed automatically.
