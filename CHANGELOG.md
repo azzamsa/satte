@@ -1,16 +1,20 @@
 # CHANGELOG
 
+## v2.5
+
+- I like sharper corner more than rounded one.
+
 ## v2.4
 
-- additional `shaper key` looks ugly.
+- Additional `shaper key` looks ugly.
 
 ## v2.3
 
-- use `shaper key` for better MCU location.
+- Use `shaper key` for better MCU location.
 
 ## v2.2
 
-- fix MCU location
+- Fix MCU location
 
 ## v2.1
 
