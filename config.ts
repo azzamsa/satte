@@ -24,15 +24,15 @@ const options: Options = {
   fastenMicrocontroller: true,
   flipConnectors: false,
   wristRestOrigin: new Trsf().translate(10, -110, 0),
-  shell: { type: "basic", lip: false }
+  shell: { type: "basic", lip: true }
 }
 // NOTE: Screws / the connector with
 // negative indices are placed automatically.
 // In the basic/advanced tab, these values were:
-// [left] screwIndices: [2.5, 10.5, 28.5, 15.5, 24.5, 6.5, 32.5]
-// [left] connectorIndex: 24.7
-// [right] screwIndices: [2.5, 10.5, 28.5, 15.5, 24.5, 6.5, 32.5]
-// [right] connectorIndex: 24.7
+// [left] screwIndices: [3.5, 30.5, 12.5, 16.5, 8.5, 35.5, 27.5]
+// [left] connectorIndex: 25.6
+// [right] screwIndices: [3.5, 30.5, 12.5, 16.5, 8.5, 35.5, 27.5]
+// [right] connectorIndex: 25.6
 
 /**
  * The planes used to position the clusters.
@@ -336,6 +336,32 @@ const fingersLeft: Key[] = [
     }
   },
   {
+    type: "blank",
+    aspect: 1,
+    cluster: "fingers",
+    position: new Trsf()
+      .rotate(-38, [0, 0, 0], [1, 0, 0])
+      .rotate(0, [0, 0, 0], [0, 1, 0])
+      .rotate(0, [0, 0, 0], [0, 0, 1])
+      .translate(0, -7.3, -5.5)
+      .placeOnMatrix({
+        column: 1.5,
+        row: -2,
+        spacingOfColumns: 21.5,
+        spacingOfRows: 20.5,
+        curvatureOfRow: 5,
+        curvatureOfColumn: 20,
+        arc: 0
+      })
+      .transformBy(leftFingersPlane),
+    keycap: {
+      letter: "4",
+      row: 1,
+      profile: "xda"
+    },
+    size: { width: 11, height: 0.5 }
+  },
+  {
     type: "mx-hotswap",
     aspect: 1,
     cluster: "fingers",
@@ -401,6 +427,32 @@ const fingersLeft: Key[] = [
       row: 4,
       profile: "xda"
     }
+  },
+  {
+    type: "blank",
+    aspect: 1,
+    cluster: "fingers",
+    position: new Trsf()
+      .rotate(-38, [0, 0, 0], [1, 0, 0])
+      .rotate(0, [0, 0, 0], [0, 1, 0])
+      .rotate(0, [0, 0, 0], [0, 0, 1])
+      .translate(0, -7.3, -5.5)
+      .placeOnMatrix({
+        column: 2.5,
+        row: -2,
+        spacingOfColumns: 21.5,
+        spacingOfRows: 20.5,
+        curvatureOfRow: 5,
+        curvatureOfColumn: 20,
+        arc: 0
+      })
+      .transformBy(leftFingersPlane),
+    keycap: {
+      letter: "5",
+      row: 1,
+      profile: "xda"
+    },
+    size: { height: 1 }
   },
   {
     type: "mx-hotswap",
@@ -818,6 +870,32 @@ const fingersRight: Key[] = [
     }
   },
   {
+    type: "blank",
+    aspect: 1,
+    cluster: "fingers",
+    position: new Trsf()
+      .rotate(-38, [0, 0, 0], [1, 0, 0])
+      .rotate(0, [0, 0, 0], [0, 1, 0])
+      .rotate(0, [0, 0, 0], [0, 0, 1])
+      .translate(0, -7.3, -5.5)
+      .placeOnMatrix({
+        column: -1.5,
+        row: -2,
+        spacingOfColumns: 21.5,
+        spacingOfRows: 20.5,
+        curvatureOfRow: 5,
+        curvatureOfColumn: 20,
+        arc: 0
+      })
+      .transformBy(rightFingersPlane),
+    keycap: {
+      letter: "7",
+      row: 1,
+      profile: "xda"
+    },
+    size: { width: 11, height: 0.5 }
+  },
+  {
     type: "mx-hotswap",
     aspect: 1,
     cluster: "fingers",
@@ -883,6 +961,32 @@ const fingersRight: Key[] = [
       row: 4,
       profile: "xda"
     }
+  },
+  {
+    type: "blank",
+    aspect: 1,
+    cluster: "fingers",
+    position: new Trsf()
+      .rotate(-38, [0, 0, 0], [1, 0, 0])
+      .rotate(0, [0, 0, 0], [0, 1, 0])
+      .rotate(0, [0, 0, 0], [0, 0, 1])
+      .translate(0, -7.3, -5.5)
+      .placeOnMatrix({
+        column: -2.5,
+        row: -2,
+        spacingOfColumns: 21.5,
+        spacingOfRows: 20.5,
+        curvatureOfRow: 5,
+        curvatureOfColumn: 20,
+        arc: 0
+      })
+      .transformBy(rightFingersPlane),
+    keycap: {
+      letter: "6",
+      row: 1,
+      profile: "xda"
+    },
+    size: { height: 1 }
   },
   {
     type: "mx-hotswap",
@@ -1055,12 +1159,12 @@ const thumbsRight: Key[] = [
 export default {
   left: {
     ...options,
-    connectorIndex: 22.3,
+    connectorIndex: 24.1,
     keys: [...fingersLeft, ...thumbsLeft],
   },
   right: {
     ...options,
-    connectorIndex: 22.3,
+    connectorIndex: 24.1,
     keys: [...fingersRight, ...thumbsRight],
   },
 }

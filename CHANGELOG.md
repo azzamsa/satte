@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.8
+
+- Use `shaper key` for better MCU location.
+  This time, it doesn't have ugly looking hump.
+
 ## v2.7
 
 - Better `Rounded Divisor` for `Rounded Side`.
