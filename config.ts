@@ -13,7 +13,7 @@ const options: Options = {
   screwSize: "M3",
   screwType: "screw insert",
   clearScrews: true,
-  rounded: { top: { horizontal: 1/4, vertical: 0.67 } },
+  rounded: { top: { horizontal: 1/20, vertical: 1/4 }, side: { divisor: 7.5, concavity: 1.5 } },
   connectors: [
     { preset: "trrs" },
     { preset: "usb", size: "average" }
@@ -24,15 +24,15 @@ const options: Options = {
   fastenMicrocontroller: true,
   flipConnectors: false,
   wristRestOrigin: new Trsf().translate(10, -110, 0),
-  shell: { type: "basic", lip: true }
+  shell: { type: "basic", lip: false }
 }
 // NOTE: Screws / the connector with
 // negative indices are placed automatically.
 // In the basic/advanced tab, these values were:
-// [left] screwIndices: [3.5, 28.5, 11.5, 15.5, 7.5, 24.5, 32.5]
-// [left] connectorIndex: 22.2
-// [right] screwIndices: [3.5, 28.5, 11.5, 15.5, 7.5, 24.5, 32.5]
-// [right] connectorIndex: 22.2
+// [left] screwIndices: [2.5, 10.5, 28.5, 15.5, 24.5, 6.5, 32.5]
+// [left] connectorIndex: 24.7
+// [right] screwIndices: [2.5, 10.5, 28.5, 15.5, 24.5, 6.5, 32.5]
+// [right] connectorIndex: 24.7
 
 /**
  * The planes used to position the clusters.
@@ -1055,12 +1055,12 @@ const thumbsRight: Key[] = [
 export default {
   left: {
     ...options,
-    connectorIndex: 22.2,
+    connectorIndex: 22.3,
     keys: [...fingersLeft, ...thumbsLeft],
   },
   right: {
     ...options,
-    connectorIndex: 22.2,
+    connectorIndex: 22.3,
     keys: [...fingersRight, ...thumbsRight],
   },
 }

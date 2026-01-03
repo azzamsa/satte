@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.7
+
+- Better `Rounded Divisor` for `Rounded Side`.
+- Better values for `Rounded Top Edge`.
+
 ## v2.6
 
 - Add lip to the base.
